@@ -37,7 +37,7 @@ public class Voiture {
 	public void entreAuGarage(Garage g) throws IllegalStateException {
 		// Et si la voiture est déjà dans un garage ?
 		if (estDansUnGarage()) {
-			throw new IllegalStateException("Un garage contient déjà cette voiture.");
+			throw new IllegalStateException("La voiture est déjà dans un garage.");
 		}
 		Stationnement s = new Stationnement(this, g);
 		myStationnements.add(s);
